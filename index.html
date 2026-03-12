@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kavya Ganesh | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(120deg,#0f172a,#1e293b);
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:40px;
+padding:20px;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+min-height:100vh;
+padding:120px 10%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+opacity:0.8;
+}
+
+.profile{
+width:260px;
+height:260px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+box-shadow:0 0 40px rgba(0,0,0,0.5);
+}
+
+.bg-image{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+background-size:cover;
+background-position:center;
+opacity:0.15;
+z-index:-1;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:rgba(255,255,255,0.1);
+}
+
+h2{
+font-size:32px;
+margin-bottom:20px;
+color:#38bdf8;
+}
+
+.skills span{
+display:inline-block;
+background:#38bdf8;
+color:black;
+padding:8px 14px;
+border-radius:20px;
+margin:6px;
+font-size:14px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg-image"></div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#awards">Awards</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>Kavya Ganesh</h1>
+
+<p>
+Computer Engineering Student passionate about robotics, electronics,
+and cybersecurity. I enjoy building hardware systems, solving technical
+problems, and learning how technology works at a deeper level.
+</p>
+</div>
+
+<img src="profile.jpg" class="profile">
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a technology enthusiast interested in robotics, embedded systems,
+electronics, and cybersecurity. Through hands-on experience in technical
+camps and student programs, I have worked on projects involving robotic
+systems, programming, and hardware components. I enjoy learning new
+technologies and applying them to real-world engineering challenges.
+</p>
+
+<div class="skills">
+
+<h3 style="margin-top:25px;">Skills</h3>
+
+<span>Python</span>
+<span>C++</span>
+<span>Arduino</span>
+<span>Electronics</span>
+<span>Computer Hardware</span>
+<span>Robotics</span>
+<span>Cybersecurity Basics</span>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Elegoo Robotic Car</h3>
+<p>
+Guided students in building and programming a robotic car while
+explaining sensors, motors, and microcontroller components.
+</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity Escape Room</h3>
+<p>
+Helped design and build an interactive cybersecurity challenge where
+students solved technical puzzles to stop a simulated cyber attack.
+</p>
+</div>
+
+<div class="card">
+<h3>CLI Program</h3>
+<p>
+Developed a command line interface project during the Collegiate
+Leadership Institute program focusing on problem solving and leadership.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Camp Counselor</h3>
+<p>
+Supported students during technical summer camps and guided them
+through robotics and engineering activities.
+</p>
+</div>
+
+<div class="card">
+<h3>CAE Ambassador</h3>
+<p>
+Represented the CAE program and helped engage students in
+cybersecurity and technology activities.
+</p>
+</div>
+
+<div class="card">
+<h3>Robotics Challenge Judge</h3>
+<p>
+Served as a judge in the Neothec Robotics Challenge, evaluating
+student robotics projects and performance.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="awards">
+
+<h2>Awards & Certifications</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Collegiate Leadership Institute</h3>
+<p>Completed the CLI program and received certification.</p>
+</div>
+
+<div class="card">
+<h3>Robotics Challenge Judge</h3>
+<p>Recognized for evaluating student robotics competition projects.</p>
+</div>
+
+<div class="card">
+<h3>Technology Camp Leadership</h3>
+<p>Recognized for mentoring and supporting students in engineering camps.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: your@email.com</p>
+
+<p>LinkedIn: linkedin.com/in/kavyaganesh1476</p>
+
+<p>GitHub: github.com/yourusername</p>
+
+</section>
+
+<footer>
+
+© 2026 Kavya Ganesh
+
+</footer>
+
+</body>
+</html>
