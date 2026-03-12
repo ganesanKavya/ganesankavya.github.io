@@ -5,9 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kavya Ganesh | Portfolio</title>
+<title>Kavya Ganesh | Engineering Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,31 +15,33 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:'Inter',sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(120deg,#0f172a,#1e293b);
+background:#0f172a;
 color:white;
 }
 
+/* NAVBAR */
+
 nav{
 position:fixed;
-top:0;
 width:100%;
+top:0;
+background:rgba(15,23,42,0.8);
+backdrop-filter:blur(10px);
 display:flex;
 justify-content:center;
 gap:40px;
-padding:20px;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(10px);
+padding:18px;
 z-index:1000;
 }
 
 nav a{
-color:white;
 text-decoration:none;
+color:white;
 font-weight:500;
 }
 
@@ -47,81 +49,92 @@ nav a:hover{
 color:#38bdf8;
 }
 
-section{
-min-height:100vh;
-padding:120px 10%;
-display:flex;
-flex-direction:column;
-justify-content:center;
-}
+/* HERO */
 
 .hero{
+height:100vh;
 display:flex;
 align-items:center;
-justify-content:space-between;
+justify-content:space-around;
 flex-wrap:wrap;
+padding:80px 10%;
+background:linear-gradient(135deg,#0f172a,#1e293b);
 }
 
 .hero-text{
-max-width:500px;
+max-width:520px;
 }
 
 .hero h1{
-font-size:48px;
+font-size:50px;
 margin-bottom:10px;
 }
 
 .hero p{
 opacity:0.8;
+line-height:1.6;
 }
 
 .profile{
-width:260px;
-height:260px;
+width:250px;
+height:250px;
 border-radius:50%;
 object-fit:cover;
-border:5px solid white;
-box-shadow:0 0 40px rgba(0,0,0,0.5);
+border:4px solid #38bdf8;
+box-shadow:0 0 30px rgba(56,189,248,0.4);
 }
 
-.bg-image{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background-image:url("https://images.unsplash.com/photo-1518770660439-4636190af475");
-background-size:cover;
-background-position:center;
-opacity:0.15;
-z-index:-1;
+/* BUTTON */
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:12px 22px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:25px;
+font-weight:600;
+transition:0.3s;
 }
 
-.cards{
+.button:hover{
+transform:scale(1.05);
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 10%;
+}
+
+h2{
+font-size:34px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+/* CARDS */
+
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
-margin-top:40px;
 }
 
 .card{
-background:rgba(255,255,255,0.05);
+background:#1e293b;
 padding:25px;
 border-radius:15px;
-backdrop-filter:blur(10px);
 transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-8px);
-background:rgba(255,255,255,0.1);
+background:#26344d;
 }
 
-h2{
-font-size:32px;
-margin-bottom:20px;
-color:#38bdf8;
-}
+/* SKILLS */
 
 .skills span{
 display:inline-block;
@@ -131,6 +144,17 @@ padding:8px 14px;
 border-radius:20px;
 margin:6px;
 font-size:14px;
+}
+
+/* TIMELINE */
+
+.timeline{
+border-left:3px solid #38bdf8;
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:30px;
 }
 
 footer{
@@ -144,152 +168,176 @@ opacity:0.7;
 
 <body>
 
-<div class="bg-image"></div>
-
 <nav>
+
 <a href="#about">About</a>
 <a href="#projects">Projects</a>
 <a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
 <a href="#awards">Awards</a>
 <a href="#contact">Contact</a>
+
 </nav>
+
+<!-- HERO -->
 
 <section class="hero">
 
 <div class="hero-text">
+
 <h1>Kavya Ganesh</h1>
 
 <p>
-Computer Engineering Student passionate about robotics, electronics,
-and cybersecurity. I enjoy building hardware systems, solving technical
-problems, and learning how technology works at a deeper level.
+Computer Engineering student passionate about robotics,
+electronics, and cybersecurity. I enjoy building
+technology projects and solving engineering problems.
 </p>
+
+<a class="button" href="resume.pdf" target="_blank">
+Download Resume
+</a>
+
 </div>
 
 <img src="profile.jpg" class="profile">
 
 </section>
 
+<!-- ABOUT -->
+
 <section id="about">
 
 <h2>About Me</h2>
 
 <p>
-I am a technology enthusiast interested in robotics, embedded systems,
-electronics, and cybersecurity. Through hands-on experience in technical
-camps and student programs, I have worked on projects involving robotic
-systems, programming, and hardware components. I enjoy learning new
-technologies and applying them to real-world engineering challenges.
+I am a technology enthusiast interested in robotics,
+embedded systems, electronics, and cybersecurity.
+I enjoy building hands-on projects and learning how
+systems work at a deeper engineering level.
 </p>
 
-<div class="skills">
+</section>
 
-<h3 style="margin-top:25px;">Skills</h3>
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Elegoo Robotic Car</h3>
+
+<p>
+Guided students in building and programming a robotic
+vehicle using sensors and microcontrollers.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Cybersecurity Escape Room</h3>
+
+<p>
+Developed an interactive cybersecurity challenge where
+students solved technical puzzles to stop a simulated
+cyber attack.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>CLI Program</h3>
+
+<p>
+Created a command-line interface project during the
+Collegiate Leadership Institute program.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Camp Counselor</h3>
+<p>Guided students in robotics and engineering camps.</p>
+</div>
+
+<div class="timeline-item">
+<h3>CAE Ambassador</h3>
+<p>Promoted cybersecurity awareness and student engagement.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Robotics Challenge Judge</h3>
+<p>Evaluated student robotics projects in Neothec competition.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
 
 <span>Python</span>
 <span>C++</span>
 <span>Arduino</span>
 <span>Electronics</span>
-<span>Computer Hardware</span>
 <span>Robotics</span>
+<span>Computer Hardware</span>
 <span>Cybersecurity Basics</span>
 
 </div>
 
 </section>
 
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Elegoo Robotic Car</h3>
-<p>
-Guided students in building and programming a robotic car while
-explaining sensors, motors, and microcontroller components.
-</p>
-</div>
-
-<div class="card">
-<h3>Cybersecurity Escape Room</h3>
-<p>
-Helped design and build an interactive cybersecurity challenge where
-students solved technical puzzles to stop a simulated cyber attack.
-</p>
-</div>
-
-<div class="card">
-<h3>CLI Program</h3>
-<p>
-Developed a command line interface project during the Collegiate
-Leadership Institute program focusing on problem solving and leadership.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="experience">
-
-<h2>Experience</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Camp Counselor</h3>
-<p>
-Supported students during technical summer camps and guided them
-through robotics and engineering activities.
-</p>
-</div>
-
-<div class="card">
-<h3>CAE Ambassador</h3>
-<p>
-Represented the CAE program and helped engage students in
-cybersecurity and technology activities.
-</p>
-</div>
-
-<div class="card">
-<h3>Robotics Challenge Judge</h3>
-<p>
-Served as a judge in the Neothec Robotics Challenge, evaluating
-student robotics projects and performance.
-</p>
-</div>
-
-</div>
-
-</section>
+<!-- AWARDS -->
 
 <section id="awards">
 
 <h2>Awards & Certifications</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
+
 <h3>Collegiate Leadership Institute</h3>
-<p>Completed the CLI program and received certification.</p>
+<p>Completed CLI leadership program.</p>
+
 </div>
 
 <div class="card">
+
 <h3>Robotics Challenge Judge</h3>
-<p>Recognized for evaluating student robotics competition projects.</p>
-</div>
+<p>Recognized for evaluating robotics competition projects.</p>
 
-<div class="card">
-<h3>Technology Camp Leadership</h3>
-<p>Recognized for mentoring and supporting students in engineering camps.</p>
 </div>
 
 </div>
 
 </section>
+
+<!-- CONTACT -->
 
 <section id="contact">
 
@@ -299,7 +347,7 @@ student robotics projects and performance.
 
 <p>LinkedIn: linkedin.com/in/kavyaganesh1476</p>
 
-<p>GitHub: github.com/yourusername</p>
+<p>GitHub: github.com/ganesanKavya</p>
 
 </section>
 
@@ -310,4 +358,5 @@ student robotics projects and performance.
 </footer>
 
 </body>
+
 </html>
